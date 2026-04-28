@@ -1,11 +1,11 @@
-import Navbar from './components/Navbar.jsx'
+import Navbar from './components/layout/Navbar'
 
 function App() {
-    return (
-        <div>
-            <Navbar />
-        </div>
-    )
+  return (
+    <div>
+      <Navbar />
+    </div>
+  )
 }
 
 export default App
