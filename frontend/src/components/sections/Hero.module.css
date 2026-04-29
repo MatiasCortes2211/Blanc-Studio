@@ -1,11 +1,11 @@
 .hero {
   position: relative;
   height: 100vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  isolation: isolate;
 }
 
 .gradiente {
@@ -19,13 +19,30 @@
 
 .titulo {
   position: relative;
-  z-index: 2;
   text-align: center;
   font-family: 'Outfit', sans-serif;
-  font-size: clamp(3rem, 7vw, 6.25rem); /* ~100px */
+  font-size: clamp(3rem, 7vw, 6.25rem);
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0;
+  cursor: default;
+}
+
+.textoNormal {
+  display: block;
   color: #111;
-  
+  transition: opacity 0.5s ease;
+}
+
+.textoBlend {
+  display: block;
+  color: #fff;
+  mix-blend-mode: difference;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
