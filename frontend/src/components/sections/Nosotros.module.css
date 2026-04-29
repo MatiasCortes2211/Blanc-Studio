@@ -10,7 +10,7 @@
 .titulo {
   font-family: 'Outfit', sans-serif;
   font-size: clamp(2.5rem, 4vw, 3.5rem);
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.1;
   color: #fff;
   letter-spacing: -0.03em;
